@@ -1120,6 +1120,7 @@
   <project path="vendor/xiaomi/breeze-camera" name="xiaomi_breeze_camera" remote="wanderer-dev" revision="main" />
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" remote="github" revision="lineage-24.0" />
 
-  <!-- Clover Hardware Interfaces (IR Modulation & Touch AIDL) -->
-  <project path="hardware/clover/interfaces" name="hardware_clover_interfaces" remote="wanderer-dev" revision="17" />
+  <!-- Replace upstream Lineage interfaces with Clover interfaces (IR Blaster SPI modulation & Touch AIDL) -->
+  <remove-project name="LineageOS/android_hardware_lineage_interfaces" />
+  <project path="hardware/lineage/interfaces" name="hardware_clover_interfaces" remote="wanderer-dev" revision="17" />
 </manifest>
